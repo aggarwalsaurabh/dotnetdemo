@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UNYYGywsCYFjG968plt/XiYPUs1tIxXI2OPpXMIQwEA7Ku+3PHxFe0QAPL6xM84bYjN7Qtvw5dniXBIbIKpRng==",
+  "success": true,
+  "projectFilePath": "C:\\temp\\net\\net.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saura\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
