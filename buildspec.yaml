@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 008956391065.dkr.ecr.us-east-1.amazonaws.com
+  build:
+    commands:
+      - docker build -t dotnetdemo -f ./Dockerfile .
+      - docker tag dotnetdemo:latest 008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest
+
+  post_build:
+    commands:
+      - docker push 008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest
+      - printf '[{"name":"dotnetdemo","imageUri":"008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest"}]' > imagedefinitions.json
+artifacts:
+    files: imagedefinitions.json
