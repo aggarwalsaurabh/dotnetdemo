@@ -1,3 +1,6 @@
+//https://dev.to/thnery/create-an-aws-ecs-cluster-using-terraform-g80
+//API built with following tutorial
+//https://www.moesif.com/blog/technical/api-development/Building-Minimal-API-with-Dotnet/
 using System;
 using System.IO;
 using System.Net;
@@ -7,6 +10,14 @@ var app = builder.Build();
 app.MapGet("/", () => 
 {
     var dataResponse = "Hello World! V6";
+    Console.WriteLine($"Request Served");
+    return dataResponse;
+
+});
+
+app.MapGet("/loaderio-e78bf51e241c1cec5b6d5095283acdab.html", () => 
+{
+    var dataResponse = "loaderio-e78bf51e241c1cec5b6d5095283acdab";
     Console.WriteLine($"Request Served");
     return dataResponse;
 
