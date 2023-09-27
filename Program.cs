@@ -7,8 +7,7 @@ app.MapGet("/creditscore", () =>
 {
     try
     {
-        var result = 3/0;
-        Console.WriteLine($"Processing succeeded: {result}");
+        Console.WriteLine($"Processing succeeded: {3 + 5}");
     }
     catch (Exception e)
     {
