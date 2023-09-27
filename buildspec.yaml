@@ -12,6 +12,6 @@ phases:
   post_build:
     commands:
       - docker push 008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest
-      - printf '[{"name":"dotnetdemo","imageUri":"008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest"}]' > imagedefinitions.json
+      - printf '[{"name":"dotnetcontainer","imageUri":"008956391065.dkr.ecr.us-east-1.amazonaws.com/dotnetdemo:latest"}]' > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
