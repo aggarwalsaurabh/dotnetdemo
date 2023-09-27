@@ -1,9 +1,16 @@
 using System;
 using System.IO;
+using System.Net;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World! V3");
+app.MapGet("/", () => 
+{
+    var dataResponse = "Hello World! V6";
+    Console.WriteLine($"Request Served");
+    return dataResponse;
+
+});
 
 app.MapGet("/score", () =>
 {
