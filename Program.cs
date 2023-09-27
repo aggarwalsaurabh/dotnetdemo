@@ -1,3 +1,5 @@
+//https://dev.to/thnery/create-an-aws-ecs-cluster-using-terraform-g80
+//https://www.moesif.com/blog/technical/api-development/Building-Minimal-API-with-Dotnet/
 using System;
 using System.IO;
 using System.Net;
