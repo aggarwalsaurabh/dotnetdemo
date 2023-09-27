@@ -15,6 +15,14 @@ app.MapGet("/", () =>
 
 });
 
+app.MapGet("/loaderio-e78bf51e241c1cec5b6d5095283acdab.html", () => 
+{
+    var dataResponse = "loaderio-e78bf51e241c1cec5b6d5095283acdab";
+    Console.WriteLine($"Request Served");
+    return dataResponse;
+
+});
+
 app.MapGet("/score", () =>
 {
         try
